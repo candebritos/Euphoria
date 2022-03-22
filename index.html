@@ -13,35 +13,52 @@
     <script>
         new WOW().init();
     </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-	<div class="contenedor1">
+	<div>
 
-		<nav class="botonera" id="mainNav">
-			<a href="index.html">
-				<img src="img/logo.jpeg" alt="logo de euphoria makeup" >
-			</a>
-
-			<ol>
-				<li> 
-					<a href="./pages/productos.html">PRODUCTOS</a> 
-				</li>
-				<li> 
-					<a href="./pages/informacion.html">INFORMACIÓN</a> 
-				</li>
-				<li> 
-					<a href="./pages/como_comprar.html">COMO COMPRAR</a> 
-				</li>
-				<li> 
-					<a href="./pages/quienes_somos.html">QUIENES SOMOS</a> 
-				</li>
-				<li> 
-					<a href="./pages/contacto.html">CONTACTO</a> 
-				</li>
-			</ol>
+		<nav class="navbar navbar-expand-lg navbar-light cambiar">
+  			<div class="container-fluid">
+    			<a class="navbar-brand" href="index.html">
+      					<img src="img/logo.jpeg" alt="logo d euphoria makeup" class="w-50">
+    			</a>
+    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
+    			</button>
+    		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+      			<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      				<li class="nav-item dropdown">
+          				<a class="nav-link dropdown-toggle" href="./pages/productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            				PRODUCTOS
+          				</a>
+          		<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            		<li><a class="dropdown-item" href="#">SKINCARE</a></li>
+            		<li><a class="dropdown-item" href="#">HERRAMIENTAS Y ACCESORIOS</a></li>
+            		<li><a class="dropdown-item" href="#">Aceites</a></li>
+            		<li><hr class="dropdown-divider"></li>
+            		<li><a class="dropdown-item" href="#">MAQUILLAJES</a></li>
+          		</ul>
+       				</li>
+        
+        			<li class="nav-item">
+          				<a class="nav-link" href="./pages/informacion.html">INFORMACIÓN</a>
+       				</li>
+        			<li class="nav-item">
+          				<a class="nav-link" href="./pages/como_comprar.html">CÓMO COMPRAR</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link" href="./pages/quienes_somos.html">QUIENES SOMOS</a>
+        			</li>
+        			<li class="nav-item">
+          				<a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+        			</li>
+        
+      			</ul>
+   			 </div>
+  			</div>
 		</nav>
 
-	
 
 	<header class="encabezado" id="header">
 
@@ -56,39 +73,58 @@
 
 	<!-- inicia contenido principal -->
 
-	<main id="cuerpo">
-		<section>
-	
+<main id="cuerpo">
+<section class="py-3">
+  <div class="container-fluid">
+    <h1 class="text-md-start">INSPERED</h1>
+    <div class="row">
 
+      <article class="col-md-6 col-lg-3 pb-3">
+        <img src="img/maddie.png" alt="img de maddie" class="w-100 img-thumbnail">
+        <h2 class="text-secondary">MADDIE</h2>
+        <p>Maddy nos recuerda que la precisión es clave. La pedrería que usa en sus párpados es una muestra de ello. Según la maquillista en jefe de Euphoria, Donni Davy, las aplicaciones que usa el personaje interpretado por Alexa Demie nos recuerdan que ella es una chica intensa. </p>
+        <a href="" class="btn btn-success w-100">Más info</a>
+      </article>
+      <!-- ends box 1 -->
 
-			<h2 class="cuerpo_titulo wow fadeInRight" >INSPERED</h2>
-			
-			
+      <article class="col-md-6 col-lg-3 pb-md-3">
+        <img src="img/shuls.jpg" alt="img de jules" class="w-100 img-thumbnail">
+        <h2 class="text-secondary">JULES</h2>
+        <p>De acuerdo a distintas declaraciones de las mentes creativas detrás de estos espectaculares maquillajes, Jules expresa a través de sombras amarillas y neones que está florenciendo en una nueva etapa de su vida. No le teme a nada y es muy valiente.  </p>
+        <a href="" class="btn btn-success w-100">Más info</a>
+      </article>
+      <!-- ends box 2 -->
 
-			<div class="cat">
+      <article class="col-md-6 col-lg-3 pb-md-3">
+        <img src="img/cassie.jpg" alt="img de cas" class="w-100 img-thumbnail">
+        <h2 class="text-secondary">CASSIE</h2>
+        <p>Cassie casi siempre tuvo un look bastante natural, salvo algunos momentos muy concretos del programa. Según la maquillista de Euphoria, la idea era transportar al personaje a una fantasía, lejos de lo que está viviendo en la realidad del programa.</p>
+        <a href="" class="btn btn-success w-100">Más info</a>
+      </article>
+      <!-- ends box 3 -->
 
-				<img src="img/maddie.png" alt="inspiracion de maddie">
-				<img src="img/jules.png" alt="inspiracion de jules">
-				<img src="img/kat.jpeg" alt="inspiracion de jules">
-				<img src="img/cas.jpg" alt="inspiracion de jules">
-				<img src="img/mad.jpg" alt="ispiracion de maddie">
-				<img src="img/jul.jpg" alt="inspiracion de jules">
-				<img src="img/kati.jpg" alt="inspiracion de jules">
-				<img src="img/cassie.jpg" alt="inspiracion de casie">
+      <article class="col-md-6 col-lg-3 pb-md-3">
+        <img src="img/kati.jpg" alt="img de kat" class="w-100 img-thumbnail">
+        <h2 class="text-secondary">KAT</h2>
+        <p>Doniella, la maquillista del programa,  afirma que maquilló a la actriz que hace de Kat, con gruesas capas de base cuando comenzó a liberarse. Sin embargo, cuando Kat reconoce que está enamorada, el maquillaje se vuelve más sutil y ligero.</p>
+        <a href="" class="btn btn-success w-100">Más info</a>
+      </article>
+      <!-- ends box 4 -->
 
+    </div><!-- ends row-->
+  </div><!-- ends container-->
+</section>
 
-			</div> 
-		</section>
-		<section>
-			<article class= "bgLight cuerpo">
-				<h4 class= "textCenter arte_titulo--xl animate__bounce" > El arte del maquillaje </h4>
+<section>
+		<article class= "bgLight cuerpo">
+			<h4 class= "textCenter arte_titulo--xl animate__bounce" > El arte del maquillaje </h4>
 				
 
 				<p class="p wow fadeInRight">
 					Uno de los elementos más característicos de Euphoria (HBO) es el maquillaje. En las redes sociales muchos están obsesionados con los brillos, estrellas, colores vibrantes y el arte que ofrece la serie en este aspecto. Por eso queremos que vos también experimentes este mundo con los productos que nosotros te ofrecemos.
 				</p>
 			</article>
-		</section>
+</section>
 
 
 
