@@ -8,6 +8,7 @@
 }
 
 
+
 html{
 	font-size: 62.5%;
 }
@@ -41,14 +42,14 @@ p{
 
 p#preline  {
   white-space: pre-line;
-  }
+ }
+
 
 
 
 .separador{
 	min-width: 22%;
 }
-
 
 
 /* clases camelCase  */
@@ -75,6 +76,7 @@ p#preline  {
 
 .bgLight{
 	background-color:rgba(243, 240, 240, .8) ;
+	color: black;
 }
 
 .bgDark{
@@ -221,6 +223,18 @@ img {
 }
 
 
+.navbar-expand .nav ul li a{
+  color:black;
+}
+
+/*Mouse encima*/
+.navbar-expand .nav ul li a:hover{
+  color: black;
+}
+
+
+
+
 .border {
 	box-sizing: border-box;
  	padding: 20px 30px;
@@ -360,13 +374,23 @@ img {
 }
 
 
+.cambiar{
+	font-size: 1.2rem;
+			text-decoration: none;
+			color: #605399;
+			font-style: black;
+}
+
+
 .botonera {
-		background-color: rgba(238, 188, 247, .5);
+		
+		
+
 		/*position*/
-		position: sticky;
-		top: 0;
+		/*position: sticky;
+		/*top: 0;
 		/*padding*/
-		padding: 10px 30px;
+		/*padding: 10px 30px;
 		/****display flex****/
 		display: flex;
 		justify-content: space-between;
@@ -374,13 +398,13 @@ img {
 	}
 
 	.botonera img{
-		width: 200px;
+		width: 100px;
 		margin-bottom: 20px;
 	}
 
 	.botonera ol{
 		/****display flex****/
-		display: flex;
+		*display: flex;
 	}
 
 	.botonera ol li{
@@ -422,10 +446,7 @@ img {
 }
 
 .form{
-	padding: 70px;
-	margin: 30px;
-	width: 800px;
-	border-radius: 10px;
+	
 	font-family: Comfortaa, sans-serif;
 	font-size: 1.5rem;
 
@@ -448,7 +469,9 @@ img {
 
 }
 
-
+ .container-fluid header nav ul li a{
+    color: black !important;
+}
 /* media queries*/
 
 @media (min-width: 768px){
@@ -535,6 +558,54 @@ img {
 		"cuerpo cuerpo" "footer footer";
 	}
 
+	#header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+}
+
+@media (min-width: 480px){
+	.contenedor1{
+		grid-template-columns: 100vw;
+		grid-template-rows: repeat(4, auto);
+		grid-template-areas: "nav nav nav" "header header header" 
+		"cuerpo cuerpo cuerpo" "footer footer footer";
+	}
+
+	#header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+}
+
+@media (min-width: 320px){
+	.contenedor1{
+		grid-template-columns: 100vw;
+		grid-template-rows: auto;
+		grid-template-areas: "nav nav nav" "header header header" 
+		"cuerpo cuerpo cuerpo" "footer footer footer";
+	}
+
+	#header{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+}
+
+
+
 
 
 @media (min-width: 1024px){
@@ -548,6 +619,7 @@ img {
 	}
 
 
+}
 
 @media (min-width: 1200px){
 	#header{
@@ -560,6 +632,11 @@ img {
 
 
 }
+
+nav img{
+	width: 150px;
+}
+
 
 
 
